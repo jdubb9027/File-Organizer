@@ -9,21 +9,34 @@ The program will then organize the given folder by the extensions of the files i
 to organize the files into those folders. You will be either prompted with a "Complete" window with a success message or an "Error" window with error
 message because the path is incorrect.
 
-Here is the extensions and folders that the program works with:
+Here is the folders the program creates and the extensions that it works with:
 
 "Picture_Folder": [".jpeg", ".jpg", ".ico", ".gif", ".png", ".svg", ".heic"],
+
 "Video_Folder": [".wmv", ".mov", ".mp4", ".mpg", ".mpeg", ".mkv", ".m3u8", ".webm", ".ts"],
+
 "Zip_Folder": [".iso", ".tar", ".gz", ".rz", ".7z", ".dmg", ".rar", ".zip"],
+
 "Music_Folder": [".mp3", ".msv", ".wav", ".wma"],
+
 "PDF_Folder": [".pdf"],
+
 "SQL_Folder": [".sql"],
+
 "Programs_Folder": [".exe", ".msi"],
+
 "Spreadsheet_Folder": [".xlsx", ".csv"],
+
 "Word_Folder": [".docx", ".doc", ".txt"],
+
 "Python_Folder": [".ipynb", ".py"],
+
 "PPT_Folder": [".pptx", ".ppt"],
+
 "Json_Folder": [".json"],
+
 "Web_Folder": [".html", ".xml", ".xhtml", ".css", ".js"],
+
 "3D_Printer_folder": [".stl", ".gcode"]
 
 
