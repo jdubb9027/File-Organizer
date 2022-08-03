@@ -1,13 +1,15 @@
-from tkinter import *
+import tkinter as tk
+from tkinter import messagebox
 from tkinter import ttk
-from file_organizer import Organizer
 from ttkthemes import ThemedTk
+from file_organizer import Organizer
 
 
 class Application(Organizer):
     def __init__(self):
         super().__init__()
-        self.instruction_label = "Enter path of folder you would like organized: \nEx: Mac OS -> /Users/Guest/Downloads"
+        self.instruction_label = "Enter path of folder you would like organized: \nEx: Mac OS -> /Users/Guest/Downloads" \
+                                 "\n   Windows -> C:\\Users\\Guest\\Downloads"
         self.window = ThemedTk(theme="itft1", themebg=True, fonts=True)
         self.window.title("File Organizer")
         self.window.config(padx=10, pady=10)
@@ -28,5 +30,9 @@ class Application(Organizer):
         return source
 
     def call_organizer(self):
-        Organizer.organizer(self, self.get_txt())
-        print(f"Organization of {self.get_txt()} Complete.")
+        if not Organizer.organizer(self, self.get_txt()):
+            tk.messagebox.showwarning(title='Error', message="There was an error with the given folder path."
+                                                             " Please check that the path is correct.")
+        else:
+            tk.messagebox.showinfo(title='Complete', message=f"You have successfully organized {self.entry.get()}")
+            print(f"Organization of {self.entry.get()} Complete.")
