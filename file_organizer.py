@@ -48,6 +48,8 @@ class Organizer:
         except IOError as err:
             if err.errno == errno.ENOENT:
                 print(err)
+                return False
             elif err.errno == errno.EBADF:
                 print(err)
+                return False
 
