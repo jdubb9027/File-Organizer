@@ -1,7 +1,7 @@
 # File-Organizer
-~Simple program with GUI to organize folders~
+\~Simple program with GUI to organize folders\~
 
-Once started a window appears with instructions, text area, and enter/quit buttons. 
+Once started a window appears with instructions, text area, and enter/quit buttons.
 You will enter the path of the folder you would like organized for windows downloads path might look like example below.
 Windows Downloads Folder Path -> C:\Users\Guest\Downloads
 Mac OS -> /Users/Guest/Downloads"
