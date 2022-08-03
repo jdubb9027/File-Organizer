@@ -25,3 +25,6 @@ Here is the extensions and folders that the program works with:
 "Json_Folder": [".json"],
 "Web_Folder": [".html", ".xml", ".xhtml", ".css", ".js"],
 "3D_Printer_folder": [".stl", ".gcode"]
+
+
+CREATED By: John DellaVecchio July 27th, 2022
